@@ -39,7 +39,7 @@ body{
   color: gray;
 }
 
-hr {
+hr{
   display: block;
   height: 1px;
   border: 0;
@@ -47,4 +47,8 @@ hr {
   margin: 1em 0;
   padding: 0; 
   color: white;
+}
+
+.verticalLine {
+  border-right: thin solid #ffa500;
 }
