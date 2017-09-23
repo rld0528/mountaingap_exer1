@@ -17,6 +17,9 @@ angular.
         when('/skills', {
           template: '<skills></skills>'
         }).
+         when('/mbta', {
+          template: '<mbta></mbta>'
+        }).
         otherwise('/home');
     }
   ]);

@@ -6,5 +6,6 @@ angular.module('myApp', [
 	'myProjects',
 	'myProjectsDetails',
 	'homePage',
-	'skills'
+	'skills',
+	'mbta'
 ]);
