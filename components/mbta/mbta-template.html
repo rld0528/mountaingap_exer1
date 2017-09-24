@@ -1,78 +1,19 @@
-<!--<H2>SKILLS</H2>
+<H2>MBTA</H2>
 
+<!--<p>jason length = {{$ctrl.mbtaRes.mode.length}}</p>-->
 
-<div class="row" ng-repeat="skill in $ctrl.skillSet">
-	<div class="col-sm-1">
-	</div>
-	<div class="col-sm-2">
-		{{skill.name}}
-	</div>
-	<div class="col-sm-8">
-		 <div class="progress">
-			  <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.perc}}"
-			  aria-valuemin="0" aria-valuemax="100" style="width:{{skill.perc}}%">
-			    {{skill.perc}}
-			  </div>
-			</div> 
-	</div>
-	<div class="col-sm-1">
-	</div>
-</div>-->
-
- <!--     <div class="row">
-          <H2>SKILLS</H2>
-          <HR>
-          <BR>
-       </div>
-
-       <div class="row">
-          <div class="col-sm-2" align="right">
-            <p style="font-size:24px;color: orange">ONLINE</p>
+<p>stop_name = {{$ctrl.mbtaRes.stop_name}}</p>
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="mbtaData in $ctrl.mbtaRes.mode">
+    <div class="media-body">
+      <h4 class="media-heading"><span style="color: black">mode_name = {{mbtaData.mode_name}}</span></h4>
+        <div ng-repeat="route in mbtaData.route">
+          route_name={{route.route_name}}
           </div>
-       </div>
-
-     <div class="row" ng-repeat="skill in $ctrl.skillSet">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2" align="right">
-          <p style="font-size:20px">{{skill.name}}</p>
-        </div>
-        <div class="col-sm-8" align="left">
-           <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.perc}}"
-              aria-valuemin="0" aria-valuemax="100" style="width:{{skill.perc}}%">
-                {{skill.perc}}%
-              </div>
-            </div> 
-        </div>
-        <div class="col-sm-1"></div>
     </div>
+    <!--<p>mode_name = {{mbtaData.mode_name}}</p>-->
+  </li>  
+</ul>
 
-
- 
-    
-
-   <div class="row">
-      <div class="col-sm-2" align="right">
-        <p style="font-size:24px;color: orange">OFFLINE</p>
-      </div>
-   </div>
-
-  <div class="row" ng-repeat="skill in $ctrl.offLineSkills">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-2" align="right">
-      <p style="font-size:20px">{{skill.name}}</p>
-    </div>
-    <div class="col-sm-8" align="left">
-       <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.perc}}"
-          aria-valuemin="0" aria-valuemax="100" style="width:{{skill.perc}}%">
-            {{skill.perc}}%
-          </div>
-        </div> 
-    </div>
-    <div class="col-sm-1"></div>
-    </div>-->
-
-    <p>{{$ctrl.mbtaRes}}</p>
 
 
