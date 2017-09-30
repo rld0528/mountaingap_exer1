@@ -31,6 +31,7 @@
 
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
+             <li><a href="#!/workexp">Personal Info</a></li>
             <li><a href="#!/skills">Skills</a></li>
             <li><a href="#!/projects">Projects</a></li>
             <li><a href="#!/mbta">MBTA</a></li>
@@ -42,11 +43,12 @@
     <div ng-view></div>
  </div>
 
+  <!--
   <footer class="footer">
     <div class="container">
       <span class="text-muted">Technologies Used: angularJS | nodeJS | bootstrap | jQuery</span>
     </div>
-  </footer>
+  </footer>-->
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -64,6 +66,10 @@
 <!-- H O M E  C O M P O N E N T-->
   <script src="components/home/home.module.js"></script>
   <script src="components/home/home.component.js"></script>
+
+<!-- W O R K   E X P   C O M P O N E N T-->
+  <script src="components/workexp/workexp.module.js"></script>
+  <script src="components/workexp/workexp.component.js"></script>
 
 
 <!-- S K I L L S  C O M P O N E N T-->

@@ -1,0 +1,49 @@
+<div class="row">
+  <H2>PERSONAL INFO</H2>
+  <HR>
+  <BR>
+</div>
+
+<div class="container-fluid"> 
+  <div class="row">
+      <div class="col-sm-4">
+      
+
+      </div>
+   
+      <div class="col-sm-4" align="center">
+        <H2><B>Work Experience</B></H2><BR>
+        <div class="row" ng-repeat="work in $ctrl.workExp">
+          <H3><span class="orangeText">{{work.job}}</span></H3>
+          <p>{{work.year}}</p>
+          <p>{{work.company}}</p>
+          <a href="{{work.compULR}}" target="_blank">Company Website</a>
+          <HR class="thinHR">
+        </div> 
+
+          <BR><BR>
+         <H2><B>Educational Background</B></H2><BR>
+         <div class="row">
+            <H3><span class="orangeText">Bachelor of Science Major in Computer Science</span></H3>
+            <p>1999 – 2004</p>
+            <p>San Sebastian College - Recoletos</p>
+            <HR class="thinHR">
+         </div>    
+         <BR><BR>
+         <H2><B>Seminars/Certifications</B></H2><BR>
+          <div class="row" ng-repeat="sems in $ctrl.seminars">
+          <H3><span class="orangeText">{{sems.title}}</span></H3>
+          <p>{{sems.year}}</p>
+          <p>{{sems.where}}</p>
+          <HR class="thinHR">
+        </div> 
+      </div>
+
+      <div class="col-sm-4">
+      </div>
+   </div> 
+
+   <div class="row">
+
+   </div>  
+</div>

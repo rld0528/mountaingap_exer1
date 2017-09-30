@@ -7,5 +7,6 @@ angular.module('myApp', [
 	'myProjectsDetails',
 	'homePage',
 	'skills',
-	'mbta'
+	'mbta',
+	'workexp'
 ]);

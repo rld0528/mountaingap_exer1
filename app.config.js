@@ -20,6 +20,9 @@ angular.
          when('/mbta', {
           template: '<mbta></mbta>'
         }).
+          when('/workexp', {
+          template: '<workexp></workexp>'
+        }).
         otherwise('/home');
     }
   ]);
