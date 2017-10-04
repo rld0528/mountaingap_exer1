@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+
+  <!-- COMPONENTS CSS-->
+  <link rel="stylesheet" href="components/home/home-template.css">
+  <link rel="stylesheet" href="components/mbta/mbta-template.css">
+  <link rel="stylesheet" href="components/my-projects/projects-template.css">
+  <link rel="stylesheet" href="components/skills/skills-template.css">
+  <link rel="stylesheet" href="components/workexp/workexp-template.css">
+  
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">RLDevelopment</a>
+          </div>
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+             <li><a href="#!/workexp">Personal Info</a></li>
+            <li><a href="#!/skills">Skills</a></li>
+            <li><a href="#!/projects">Projects</a></li>
+            <li><a href="#!/mbta">MBTA</a></li>
+          </ul>
+        </div>
+    </nav>
+
+  <div class="container">
+    <div ng-view></div>
+ </div>
+
+  <!--
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Technologies Used: angularJS | nodeJS | bootstrap | jQuery</span>
+    </div>
+  </footer>-->
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="app.config.js"></script>
+
+<!-- P R O J   C O M P O N E N T-->
+  <script src="components/my-projects/projects.module.js"></script>
+  <script src="components/my-projects/projects.component.js"></script>
+
+<!-- P R O J   D E T A I L S  C O M P O N E N T-->
+  <script src="components/my-projects-details/projectdetails.module.js"></script>
+  <script src="components/my-projects-details/projectdetails.component.js"></script>
+
+<!-- H O M E  C O M P O N E N T-->
+  <script src="components/home/home.module.js"></script>
+  <script src="components/home/home.component.js"></script>
+
+<!-- W O R K   E X P   C O M P O N E N T-->
+  <script src="components/workexp/workexp.module.js"></script>
+  <script src="components/workexp/workexp.component.js"></script>
+
+
+<!-- S K I L L S  C O M P O N E N T-->
+  <script src="components/skills/skills.module.js"></script>
+  <script src="components/skills/skills.component.js"></script>
+
+<!-- M B T A  C O M P O N E N T-->
+  <script src="components/mbta/mbta.module.js"></script>
+  <script src="components/mbta/mbta.component.js"></script>
+
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+  <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/myFunctions.js"></script>
+</body>
+
+</html>

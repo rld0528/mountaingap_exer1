@@ -1,0 +1,55 @@
+  <div class="row">
+      <H2>SKILLS</H2>
+      <HR>
+      <BR>
+   </div>
+
+   <div class="row">
+      <div class="col-sm-2" align="right">
+        <p class="skillPstyle">ONLINE</p>
+      </div>
+   </div>
+
+ <div class="row" ng-repeat="skill in $ctrl.skillSet">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2" align="right">
+      <p class="skillTit">{{skill.name}}</p>
+    </div>
+    <div class="col-sm-8" align="left">
+       <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.perc}}"
+          aria-valuemin="0" aria-valuemax="100" style="width:{{skill.perc}}%">
+            {{skill.perc}}%
+          </div>
+        </div> 
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="col-sm-2" align="right">
+    <p class="skillPstyle">OFFLINE</p>
+  </div>
+</div>
+
+<div class="row" ng-repeat="skill in $ctrl.offLineSkills">
+<div class="col-sm-1"></div>
+<div class="col-sm-2" align="right">
+  <p class="skillTit">{{skill.name}}</p>
+</div>
+<div class="col-sm-8" align="left">
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.perc}}"
+      aria-valuemin="0" aria-valuemax="100" style="width:{{skill.perc}}%">
+        {{skill.perc}}%
+      </div>
+    </div> 
+</div>
+<div class="col-sm-1"></div>
+</div>
+
+

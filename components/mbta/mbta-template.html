@@ -1,0 +1,28 @@
+<H2>MBTA</H2>
+
+<p>PICK YOUR STOP:</p>
+
+<select ng-model="$ctrl.stopID" ng-change="$ctrl.selectedItemChanged($ctrl.stopID)">
+  <option ng-repeat="stop in $ctrl.mbtaRes.stop" value="{{stop.stop_id}}">
+    {{stop.stop_name}} 
+  </option>
+</select>
+
+<p><I>STOP_ID TEMP DISPLAY FOR TRACING --> </I> {{$ctrl.stopID}}</p>
+
+<H3>{{$ctrl.stops.stop_name}}</H3>
+
+<p>{{$ctrl.stops}}</p>  <!--STOPS JSON-->
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="mbtaData in $ctrl.stops.mode">
+
+    <div class="media-body">
+      <h4 class="media-heading"><span style="color: black">{{mbtaData.mode_name}}</span></h4><!--STOP MODE NAME-->
+    </div>
+
+  </li>  
+</ul>
+
+<p>{{$ctrl.lot}}</p>
+
+

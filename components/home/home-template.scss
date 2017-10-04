@@ -1,0 +1,21 @@
+$bgColor : #333;
+$orange : #ffa500;
+
+.thinHR{
+  height:1px;
+  border:none;
+  color:$bgColor;
+  background-color: $bgColor;
+}
+
+.verticalLine {
+  border-right: thin solid $orange;
+}
+
+.size32fnt{
+  font-size:32px;
+}
+
+.orangeText{
+  color: $orange;
+}

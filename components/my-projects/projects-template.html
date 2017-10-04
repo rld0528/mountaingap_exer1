@@ -1,0 +1,32 @@
+ <div class="row">
+      <H2>PROJECTS</H2>
+      <HR>
+      <BR>
+   </div>
+
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-group">
+
+        <!-- iTEST -->
+            <li class="list-group-item" ng-repeat="proj in $ctrl.projList">
+               <div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" ng-src="{{proj.img}}" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><span style="color: black">{{proj.name}}</span></h4>
+                        {{proj.desc}}
+                     </div>
+                </div>
+             </li>  
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
