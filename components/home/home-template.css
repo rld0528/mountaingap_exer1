@@ -1,0 +1,18 @@
+.thinHR {
+  height: 1px;
+  border: none;
+  color: #333;
+  background-color: #333;
+}
+
+.verticalLine {
+  border-right: thin solid #ffa500;
+}
+
+.size32fnt {
+  font-size: 32px;
+}
+
+.orangeText {
+  color: #ffa500;
+}
